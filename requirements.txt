@@ -1,7 +1,5 @@
-joblib
+jobli
 pandas
 xgboost
 streamlit==1.49.1
 sklearn
-python==3.13.7
-
