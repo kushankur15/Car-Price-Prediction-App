@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 from preprocessing import data_prep
 
-model = joblib.load('car price\model.pkl')
-encoder = joblib.load('car price\encoder.pkl')
+model = joblib.load('model.pkl')
+encoder = joblib.load('encoder.pkl')
 
 st.markdown("""
     <style>
@@ -93,4 +93,5 @@ if st.button("Predict Price"):
     )
 
     prediction = model.predict(X_new)[0]
+
     st.success(f"Predicted Price: ${prediction:,.2f}")
